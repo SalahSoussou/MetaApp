@@ -3,7 +3,7 @@ import React from "react";
 
 const Haeder = () => {
   return (
-    <View>
+    <View style={styles.header}>
       <Text>Haeder</Text>
     </View>
   );
@@ -11,4 +11,10 @@ const Haeder = () => {
 
 export default Haeder;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  header: {
+    justifyContent: "center",
+    alignItems: "center",
+    paddingTop: 20,
+  },
+});
