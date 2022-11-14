@@ -15,12 +15,13 @@ let itims = lest.map((e, i) => (
     }}
     key={i}
   >
-    {e}
+    {e} : {i + 1}
   </Text>
 ));
 const ScrollCom = () => {
   return (
     <View style={{ flex: 0.7 }}>
+      <Text style={{ fontSize: 40, textAlign: "center" }}>Menu</Text>
       <ScrollView style={styles.scrollStyle}>{itims}</ScrollView>
     </View>
   );
