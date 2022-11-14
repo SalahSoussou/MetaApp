@@ -1,4 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
+import FlatLs from "./components/FlatLs";
 import Footer from "./components/Footer";
 import Haeder from "./components/Haeder";
 import ScrollCom from "./components/ScrollCom";
@@ -12,13 +13,12 @@ export default function App() {
           <Text style={styles.textStyl}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
             sequi perferendis , doloribus possimus voluptatibus, doloremque
-            explicabo ratione nesciunt suscipit ex aut illo iste molestias, cum
-            perspiciatis architecto?
+            explicabo ratione nesciunt suscipit ex aut illo iste molestias,
           </Text>
         </View>
         <ScrollCom />
+        <FlatLs />
       </View>
-
       <View>
         <Footer />
       </View>
@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     paddingTop: 20,
   },
   bod: {
-    flex: 0.3,
+    flex: 0.2,
     backgroundColor: "green",
     padding: 20,
   },
@@ -41,6 +41,6 @@ const styles = StyleSheet.create({
     padding: 20,
     backgroundColor: "#fff",
     borderRadius: 5,
-    fontSize: 25,
+    fontSize: 15,
   },
 });
