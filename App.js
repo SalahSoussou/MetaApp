@@ -1,12 +1,19 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
+import Haeder from "./components/Haeder";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Hello word! my first app yoo</Text>
-      <Text>Salah is test</Text>
-      <StatusBar style="auto" />
+      <Haeder />
+      <View style={styles.header}>
+        <Text style={styles.text}>Hello, World!</Text>
+      </View>
+      <View style={styles.body}>
+        <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit.</Text>
+        <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit.</Text>
+        <Text>Lorem ipsum dolor sit amet consectetur adipisicing elit.</Text>
+      </View>
     </View>
   );
 }
@@ -18,7 +25,17 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
-    text: {
-      backgroundColor: "blue",
-    },
+  header: {
+    backgroundColor: "pink",
+    borderRadius: 5,
+    padding: 20,
+  },
+  text: {
+    fontWeight: "bold",
+  },
+  body: {
+    backgroundColor: "#fff",
+    padding: 20,
+    borderRadius: 5,
+  },
 });
