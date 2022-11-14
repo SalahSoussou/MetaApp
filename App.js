@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
     paddingTop: 20,
   },
   bod: {
-    flex: 1,
+    flex: 0.3,
     backgroundColor: "green",
     padding: 20,
   },
