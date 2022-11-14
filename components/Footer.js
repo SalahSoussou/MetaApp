@@ -14,11 +14,11 @@ export default class Footer extends Component {
 const styles = StyleSheet.create({
   footer: {
     backgroundColor: "#F4CE14",
-    marginBottom: 10,
   },
   text: {
     fontSize: 18,
     color: "black",
     textAlign: "center",
+    padding: 15,
   },
 });
