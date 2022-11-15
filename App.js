@@ -1,6 +1,7 @@
 import { StyleSheet, Text, TextInput, View } from "react-native";
 import FlatLs from "./components/FlatLs";
 import Footer from "./components/Footer";
+import FeedbackForm from "./components/Form";
 import Haeder from "./components/Haeder";
 import ScrollCom from "./components/ScrollCom";
 import SictionLs from "./components/SictionLs";
@@ -19,10 +20,11 @@ export default function App() {
         </View>
         <ScrollCom />
         <FlatLs />
+        <FeedbackForm />
         <SictionLs />
-      </View>
-      <View>
-        <Footer />
+        <View>
+          <Footer />
+        </View>
       </View>
     </>
   );
