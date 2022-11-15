@@ -11,7 +11,7 @@ const FeedbackForm = () => {
   return (
     <ScrollView style={styles.container}>
       <Text style={styles.headingSection}>
-                How was your visit to Little Lemon?
+        How was your visit to Little Lemon?
       </Text>
       <Text style={styles.infoSection}>
         Little Lemon is a charming neighborhood bistro that serves simple food

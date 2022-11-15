@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TextInput, View } from "react-native";
+import { Image, StyleSheet, Text, TextInput, View } from "react-native";
 import FlatLs from "./components/FlatLs";
 import Footer from "./components/Footer";
 import FeedbackForm from "./components/Form";
@@ -12,10 +12,11 @@ export default function App() {
       <View style={styles.container}>
         <Haeder />
         <View style={styles.bod}>
-          <Text style={styles.textStyl}>
+          {/* <Text style={styles.textStyl}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
             sequi perferendis ,
-          </Text>
+          </Text> */}
+          <Image source={require("./assets/favicon.png")} />
           <TextInput placeholder="password" />
         </View>
         <ScrollCom />
@@ -37,8 +38,10 @@ const styles = StyleSheet.create({
     paddingTop: 20,
   },
   bod: {
-    flex: 0.2,
+    flex: 0.25,
     padding: 10,
+    justifyContent: "center",
+    alignItems: "center",
     backgroundColor: "green",
   },
   textStyl: {

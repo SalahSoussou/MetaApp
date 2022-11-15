@@ -1,11 +1,12 @@
-import { ScrollView, StyleSheet, Text, View } from "react-native";
+import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import React from "react";
 const myText =
-  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto blanditiis cum dolor rerum voluptatum dolores harum fugit inventore tenetur aspernatur in asperiores provident esse dolorem, suscipit accusantium reiciendis porro!Lorem,";
+  "Lorem, ipsum dolor sit amet consectetur adipisicing elit. dolorem, suscipit accusantium reiciendis porro!Lorem,";
 
 let lest = myText.split(" ");
 let itims = lest.map((e, i) => (
   <Text
+    key={i}
     style={{
       fontSize: 25,
       textAlign: "center",
@@ -15,12 +16,12 @@ let itims = lest.map((e, i) => (
       borderRadius: 8,
     }}
   >
-    {e} : {i + 1}
+    {e} : {i}
   </Text>
 ));
 const ScrollCom = () => {
   return (
-    <View style={{ flex: 0.3 }}>
+    <View style={{ flex: 1 }}>
       <ScrollView style={styles.scrollStyle}>{itims}</ScrollView>
     </View>
   );
