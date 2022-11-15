@@ -14,7 +14,6 @@ let itims = lest.map((e, i) => (
       paddingVertical: 10,
       borderRadius: 8,
     }}
-    key={i}
   >
     {e} : {i + 1}
   </Text>
