@@ -6,7 +6,7 @@ const flatText =
 let lest = flatText.split(" ");
 let arr = [];
 
-lest.forEach((e, i) => arr.push({ name: e, id: i }));
+lest.forEach((e, i) => arr.push({ name: e, id: i + 1 }));
 const Item = ({ name }) => {
   return (
     <View>

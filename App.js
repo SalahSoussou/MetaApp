@@ -1,8 +1,9 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TextInput, View } from "react-native";
 import FlatLs from "./components/FlatLs";
 import Footer from "./components/Footer";
 import Haeder from "./components/Haeder";
 import ScrollCom from "./components/ScrollCom";
+import SictionLs from "./components/SictionLs";
 
 export default function App() {
   return (
@@ -12,12 +13,13 @@ export default function App() {
         <View style={styles.bod}>
           <Text style={styles.textStyl}>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
-            sequi perferendis , doloribus possimus voluptatibus, doloremque
-            explicabo ratione nesciunt suscipit ex aut illo iste molestias,
+            sequi perferendis ,
           </Text>
+          <TextInput placeholder="password" />
         </View>
         <ScrollCom />
         <FlatLs />
+        <SictionLs />
       </View>
       <View>
         <Footer />
@@ -34,8 +36,8 @@ const styles = StyleSheet.create({
   },
   bod: {
     flex: 0.2,
+    padding: 10,
     backgroundColor: "green",
-    padding: 20,
   },
   textStyl: {
     padding: 20,
