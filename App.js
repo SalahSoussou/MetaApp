@@ -1,4 +1,11 @@
-import { Image, StyleSheet, Text, TextInput, View } from "react-native";
+import {
+  Image,
+  StyleSheet,
+  Text,
+  TextInput,
+  useWindowDimensions,
+  View,
+} from "react-native";
 import FlatLs from "./components/FlatLs";
 import Footer from "./components/Footer";
 import FeedbackForm from "./components/Form";
@@ -7,16 +14,16 @@ import ScrollCom from "./components/ScrollCom";
 import SictionLs from "./components/SictionLs";
 
 export default function App() {
+  const { width: w, height, fontScale } = useWindowDimensions();
   return (
     <>
       <View style={styles.container}>
         <Haeder />
         <View style={styles.bod}>
-          {/* <Text style={styles.textStyl}>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis
-            sequi perferendis ,
-          </Text> */}
-          <Image source={require("./assets/favicon.png")} />
+          <Text style={styles.textStyl}>
+            {Math.round(w)},{Math.round(height)},{Math.round(fontScale)}
+          </Text>
+          {/* <Image source={require("./assets/favicon.png")} /> */}
           <TextInput placeholder="password" />
         </View>
         <ScrollCom />
@@ -45,7 +52,7 @@ const styles = StyleSheet.create({
     backgroundColor: "green",
   },
   textStyl: {
-    padding: 20,
+    padding: 5,
     backgroundColor: "#fff",
     borderRadius: 5,
     fontSize: 15,
